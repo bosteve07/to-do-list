@@ -1,0 +1,120 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Allows the main content to grow and push the footer down */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #6b6b6b;
+}
+
+.container{
+    background-color: #fff;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+  
+}
+
+input{
+    border: 1px solid #f2f2f2;
+    border-radius: 2px ;
+    margin: 10px 0 10px;
+    padding: 10px;
+    width: 80%;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #F28705;
+    border: none;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+
+}
+
+button:hover{
+    
+    background-color: #232A34    ;
+
+}
+h1{
+    margin-top: 0;
+    color: #232A34    ;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+
+}
+li{
+    padding: 10px;
+    background-color: #eee;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child{
+    margin-bottom: 0;
+}
+
+.delete-todo-btn{
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+.delete-todo-btn:hover{
+    background-color: #d32f2f;
+}
+
+img{
+    width: 20%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+@media (max-width: 600px) {
+    footer p, footer div {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    footer a {
+        display: block; /* Stack links vertically */
+        margin: 5px 0; /* Space between links */
+    }
+
+    .container {
+        padding: 15px;             /* Reduced padding for mobile */
+        max-width: 90%;            /* Allow more width on small devices */
+    }
+}
